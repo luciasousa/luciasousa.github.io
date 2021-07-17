@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="https://unpkg.com/jquery.terminal/js/jquery.terminal.min.js"></script>
+        <link rel="stylesheet" href="https://unpkg.com/jquery.terminal/css/jquery.terminal.min.css"/>
+    </head>
+    <body>
+        <script>
+            $('body').terminal({
+                skills: function() {
+                    this.echo(':)\n');
+                },
+                aboutme: function() {
+                    this.echo('I am a MSc student in Computer and Telematics Engineering at Aveiro University.');
+                },
+                help: function() {
+                    this.echo(':)\n');
+                },
+                contactme: function() {
+                    this.echo('https://www.linkedin.com/in/luciambsousa/\n');
+                }
+            }, {
+                greetings: "Hello, I'm Lúcia! Welcome to my website. \n\nHere are the available commands: \naboutme, skills, help, contactme\n"
+            });
+            </script>
+    </body>
+</html>
+    
+    O
+    |
+   /|\
+    |
+   / \          
