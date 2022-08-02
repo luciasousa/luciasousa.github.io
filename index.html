@@ -8,20 +8,18 @@
     <body>
         <script>
             $('body').terminal({
-                skills: function() {
-                    this.echo(':)\n');
-                },
                 aboutme: function() {
                     this.echo('I am a MSc student in Computer and Telematics Engineering at Aveiro University.\n');
                 },
                 downloadcv: function() {
-                    this.echo($('<a href="/files/LuciaSousa_CV.pdf" download> click here </a>'));
+                    this.echo($('<a href="files/LuciaSousa_CV.pdf" download> Click here to see my CV. </a>'));
+                    this.echo('\n');
                 },
                 contactme: function() {
                     this.echo('https://www.linkedin.com/in/luciambsousa/\n');
                 }
             }, {
-                greetings: "Hello, I'm Lúcia! Welcome to my website. \n\nHere are the available commands: \naboutme, skills, downloadcv, contactme\n"
+                greetings: "Hello, I'm Lúcia! Welcome to my website. \n\nHere are the available commands: \naboutme, downloadcv, contactme\n"
             });
             </script>
     </body>
